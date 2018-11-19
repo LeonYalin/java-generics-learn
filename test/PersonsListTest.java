@@ -13,7 +13,7 @@ public class PersonsListTest {
 
     @Test
     public void testAddToPersonsList() {
-        PersonsList<String> personsList = new PersonsList<String>();
+        PersonsList<String> personsList = new PersonsList<>();
         assertEquals(personsList.size(), 0);
 
         // personsList.add(1); Won't let because of different type

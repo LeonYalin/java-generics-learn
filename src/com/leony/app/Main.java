@@ -2,6 +2,7 @@ package com.leony.app;
 
 import com.leony.home.GenericClassesAndInterfaces;
 import com.leony.home.GenericCollections;
+import com.leony.home.GenericMethods;
 import com.leony.home.IntroductionToGenerics;
 
 public class Main {
@@ -10,6 +11,7 @@ public class Main {
         introductionToGenerics();
         genericCollections();
         genericClassesAndInterfaces();
+        genericMethods();
     }
 
     private static void introductionToGenerics() {
@@ -37,6 +39,13 @@ public class Main {
 
         printMessage("GenericClassesAndInterfaces: type bounds");
         genericClassesAndInterfaces.typeBounds();
+    }
+
+    private static void genericMethods() {
+        GenericMethods genericMethods = new GenericMethods();
+
+        printMessage("GenericMethods: play with generic methods");
+        genericMethods.playWithGenericMethods();
     }
 
     private static void printMessage(String msg) {
