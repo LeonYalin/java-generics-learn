@@ -1,9 +1,6 @@
 package com.leony.app;
 
-import com.leony.home.GenericClassesAndInterfaces;
-import com.leony.home.GenericCollections;
-import com.leony.home.GenericMethods;
-import com.leony.home.IntroductionToGenerics;
+import com.leony.home.*;
 
 public class Main {
 
@@ -12,6 +9,7 @@ public class Main {
         genericCollections();
         genericClassesAndInterfaces();
         genericMethods();
+        wildcards();
     }
 
     private static void introductionToGenerics() {
@@ -46,6 +44,13 @@ public class Main {
 
         printMessage("GenericMethods: play with generic methods");
         genericMethods.playWithGenericMethods();
+    }
+
+    private static void wildcards() {
+        Wildcards wildcards = new Wildcards();
+
+        printMessage("GenericMethods: play with wildcards");
+        wildcards.playWithWildcards();
     }
 
     private static void printMessage(String msg) {

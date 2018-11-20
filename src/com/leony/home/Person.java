@@ -1,8 +1,8 @@
 package com.leony.home;
 
 public class Person implements Comparable<Person> {
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
     public Person() {
         System.out.println("default person constructor");
