@@ -23,4 +23,9 @@ public class PersonsList<T> implements Iterable<T> {
     public Iterator<T> iterator() {
         return personsList.iterator();
     }
+
+    @Override
+    public String toString() {
+        return String.format("PersonsList{%s}", personsList);
+    }
 }

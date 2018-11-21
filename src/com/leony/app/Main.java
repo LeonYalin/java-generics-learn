@@ -11,6 +11,7 @@ public class Main {
         genericMethods();
         wildcards();
         rawTypesAndCompatibility();
+        reflection();
     }
 
     private static void introductionToGenerics() {
@@ -62,6 +63,19 @@ public class Main {
 
         printMessage("RawTypesAndCompatibility: implications of erasure");
         rawTypesAndCompatibility.implicationsOfErasure();
+    }
+
+    private static void reflection() {
+        Reflection reflection = new Reflection();
+
+        printMessage("Reflection: class literals");
+        reflection.classLiterals();
+
+        printMessage("Reflection: reflecting types");
+        reflection.reflectingTypes();
+
+        printMessage("Reflection: reflecting generic information");
+        reflection.reflectingGenericInformation();
     }
 
     private static void printMessage(String msg) {
