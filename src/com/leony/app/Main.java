@@ -10,6 +10,7 @@ public class Main {
         genericClassesAndInterfaces();
         genericMethods();
         wildcards();
+        rawTypesAndCompatibility();
     }
 
     private static void introductionToGenerics() {
@@ -51,6 +52,16 @@ public class Main {
 
         printMessage("GenericMethods: play with wildcards");
         wildcards.playWithWildcards();
+    }
+
+    private static void rawTypesAndCompatibility() {
+        RawTypesAndCompatibility rawTypesAndCompatibility = new RawTypesAndCompatibility();
+
+        printMessage("RawTypesAndCompatibility: raw types");
+        rawTypesAndCompatibility.rawTypes();
+
+        printMessage("RawTypesAndCompatibility: implications of erasure");
+        rawTypesAndCompatibility.implicationsOfErasure();
     }
 
     private static void printMessage(String msg) {
