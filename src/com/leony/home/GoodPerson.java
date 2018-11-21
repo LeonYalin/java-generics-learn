@@ -1,6 +1,9 @@
 package com.leony.home;
 
-public class GoodPerson extends Person {
+import java.io.Closeable;
+import java.io.IOException;
+
+public class GoodPerson extends Person implements Closeable {
     String hobby;
 
     public GoodPerson(String name, int age, String hobby) {
@@ -20,4 +23,7 @@ public class GoodPerson extends Person {
     public String toString() {
         return String.format("GoodPerson{name=%s, age=%s, hobby=%s}", name, age, hobby);
     }
+
+    @Override
+    public void close() throws IOException {}
 }

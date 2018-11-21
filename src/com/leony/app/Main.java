@@ -12,6 +12,7 @@ public class Main {
         wildcards();
         rawTypesAndCompatibility();
         reflection();
+        advancedTopics();
     }
 
     private static void introductionToGenerics() {
@@ -76,6 +77,16 @@ public class Main {
 
         printMessage("Reflection: reflecting generic information");
         reflection.reflectingGenericInformation();
+    }
+
+    private static void advancedTopics() {
+        AdvancedTopics advancedTopics = new AdvancedTopics();
+
+        printMessage("AdvancedTopics: functional interfaces");
+        advancedTopics.functionalInterfaces();
+
+        printMessage("AdvancedTopics: intersection types");
+        advancedTopics.intersectionTypes();
     }
 
     private static void printMessage(String msg) {
